@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main] 
+    branches: [ main ] 
     
 jobs:
   build:
@@ -12,13 +12,14 @@ jobs:
     steps:
       - name: Checkout repositorio
         uses: actions/checkout@v3
-      - name: Instalar nodeJs
-        uses: actions/setup-node@v4
-      with:
-        node-version: "20"
-      - name: INstalar despendenicas
-        run: npm install
-      - name: Ejecutar pruebas
-          run: npm start
-    
 
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Ejecutar aplicación
+        run: npm start
