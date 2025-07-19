@@ -1,0 +1,8 @@
+{
+  "name": "CI/CD",
+  "main": "index.js",
+  "version":"1.0.0",
+  "scripts":{
+    "start": "node index.js"
+  }
+}
