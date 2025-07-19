@@ -2,4 +2,4 @@ function helloWorld(){
  return "Hola mundo"
 }
 
-module.exports=helloworld;
+module.exports=helloWorld;
